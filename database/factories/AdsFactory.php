@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\EnumManager\AdsTypeEnum;
 use App\Models\Ads;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

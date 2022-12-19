@@ -5,7 +5,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="PHP"></a>
 <a href="https://img.shields.io/travis/php-v/abdelalim2000/ads-management/master"><img src="https://img.shields.io/travis/php-v/abdelalim2000/ads-management/master" alt="PHP Version"></a>
 </p>
 
@@ -27,6 +26,13 @@ cp .env.example .env
 - Run migration and seed the data
 ```js
 php artisan migrate --seed
+```
+
+## Schedule Runner
+to run the schedule and send mails to advertisers please run code below
+
+```js
+php artisan schedule:work
 ```
 
 ## Postman Invitation
