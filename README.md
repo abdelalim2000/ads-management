@@ -35,6 +35,18 @@ to run the schedule and send mails to advertisers please run code below
 php artisan schedule:work
 ```
 
+### Mail-trap configuration
+don`t forget to add to the .env file mailtrap configuration to test and see the result of mails sent to users
+
+```js
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=587
+MAIL_USERNAME=your-username
+MAIL_PASSWORD=your-password
+MAIL_ENCRYPTION=tls
+```
+
 ## Postman Invitation
 to test all endpoints below is the link to postman workspace Ads Management 
 here you will find all the end points for the project to see and test it
