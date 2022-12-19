@@ -1,6 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\AdsApiController;
+use App\Http\Controllers\Api\AdvertiserApiController;
+use App\Http\Controllers\Api\CategoryApiController;
+use App\Http\Controllers\Api\TagApiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::apiResources([
+    'categories' => CategoryApiController::class,
+    'tags' => TagApiController::class
+]);
+
+Route::apiResource('ads',AdsApiController::class)->only(['index']);
+Route::apiResource('advertisers',AdvertiserApiController::class)->only(['show']);
